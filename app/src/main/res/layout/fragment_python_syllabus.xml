@@ -1,0 +1,280 @@
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/python_background"
+    tools:context="com.svrinfotech.PythonSyllabus">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/pythonTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="5dp"
+            android:layout_marginTop="20dp"
+            android:text="@string/pythonIntroTitle"/>
+
+        <CheckBox
+            android:id="@+id/pythonIntro"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/pythonTitle"
+            android:layout_marginLeft="20dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginEnd="40dp"
+            android:layout_marginRight="40dp"
+            android:text="@string/pythonIntro"/>
+
+        <CheckBox
+            android:id="@+id/basicSyntax"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/pythonTitle"
+            android:layout_toRightOf="@id/pythonIntro"
+            android:layout_toEndOf="@id/pythonIntro"
+            android:text="@string/basicSyntax"/>
+
+        <CheckBox
+            android:id="@+id/pythonFeatures"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/pythonIntro"
+            android:layout_alignLeft="@id/pythonIntro"
+            android:layout_alignStart="@id/pythonIntro"
+            android:text="@string/pythonFeatures"/>
+
+        <TextView
+            android:id="@+id/pythonBasic"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/pythonFeatures"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="5dp"
+            android:text="@string/pythonBasics"/>
+
+
+        <CheckBox
+            android:id="@+id/identifiers"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/pythonBasic"
+            android:layout_alignLeft="@id/pythonIntro"
+            android:layout_alignStart="@id/pythonIntro"
+            android:layout_marginRight="35dp"
+            android:layout_marginEnd="35dp"
+            android:text="@string/identifiers"/>
+
+        <CheckBox
+            android:id="@+id/quotation"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/pythonBasic"
+            android:layout_toRightOf="@id/identifiers"
+            android:layout_toEndOf="@id/identifiers"
+            android:layout_marginRight="35dp"
+            android:layout_marginEnd="35dp"
+            android:text="@string/quotation"/>
+
+        <CheckBox
+            android:id="@+id/indentation"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/pythonBasic"
+            android:layout_toEndOf="@id/quotation"
+            android:layout_toRightOf="@id/quotation"
+            android:text="@string/indentation"/>
+
+
+
+        <CheckBox
+            android:id="@+id/variableTypes"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/identifiers"
+            android:layout_alignLeft="@id/identifiers"
+            android:layout_alignStart="@id/identifiers"
+            android:text="@string/variableTypes"/>
+
+        <CheckBox
+            android:id="@+id/operators"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/identifiers"
+            android:layout_alignStart="@id/quotation"
+            android:layout_alignLeft="@id/quotation"
+            android:text="@string/operators"/>
+
+        <CheckBox
+            android:id="@+id/comments"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/identifiers"
+            android:layout_alignLeft="@id/indentation"
+            android:layout_alignStart="@id/indentation"
+            android:text="@string/comments"/>
+
+        <CheckBox
+            android:id="@+id/multilineStatement"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/variableTypes"
+            android:layout_alignLeft="@id/pythonIntro"
+            android:layout_alignStart="@id/pythonIntro"
+            android:text="@string/multilineStatement"/>
+
+        <CheckBox
+            android:id="@+id/pyControlStatement"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/variableTypes"
+            android:layout_alignLeft="@id/basicSyntax"
+            android:layout_alignStart="@id/basicSyntax"
+            android:text="@string/controlStatement"/>
+
+
+        <TextView
+            android:id="@+id/corePython"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/multilineStatement"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="5dp"
+            android:text="@string/corePython"/>
+
+        <CheckBox
+            android:id="@+id/sequence"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/corePython"
+            android:layout_alignLeft="@id/pythonIntro"
+            android:layout_alignStart="@id/pythonIntro"
+            android:text="@string/sequence"/>
+
+        <CheckBox
+            android:id="@+id/pyString"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/corePython"
+            android:layout_alignStart="@id/quotation"
+            android:layout_alignLeft="@id/quotation"
+            android:text="@string/string"/>
+
+        <CheckBox
+            android:id="@+id/tuples"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/corePython"
+            android:layout_alignLeft="@id/indentation"
+            android:layout_alignStart="@id/indentation"
+            android:text="@string/tuples"/>
+
+        <CheckBox
+            android:id="@+id/list"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/sequence"
+            android:layout_alignStart="@id/pythonIntro"
+            android:layout_alignLeft="@id/pythonIntro"
+            android:text="@string/list"/>
+
+        <CheckBox
+            android:id="@+id/dictionary"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/sequence"
+            android:layout_alignLeft="@id/quotation"
+            android:layout_alignStart="@id/quotation"
+            android:text="@string/dictionary"/>
+
+        <CheckBox
+            android:id="@+id/set"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/sequence"
+            android:layout_alignStart="@id/indentation"
+            android:layout_alignLeft="@id/indentation"
+            android:text="@string/set"/>
+
+        <CheckBox
+            android:id="@+id/pyExceptionHandling"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/list"
+            android:layout_alignLeft="@id/pythonIntro"
+            android:layout_alignStart="@id/pythonIntro"
+            android:text="@string/exceptionHandling"/>
+
+        <CheckBox
+            android:id="@+id/pyFileHandling"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/list"
+            android:layout_alignStart="@id/basicSyntax"
+            android:layout_alignLeft="@id/basicSyntax"
+            android:text="@string/fileHandling"/>
+
+        <TextView
+            android:id="@+id/advancePython"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/pyExceptionHandling"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="5dp"
+            android:text="@string/advancePython"/>
+
+        <CheckBox
+            android:id="@+id/pyClassesObjects"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/advancePython"
+            android:layout_alignLeft="@id/pythonIntro"
+            android:layout_alignStart="@id/pythonIntro"
+            android:text="@string/classesObjects"/>
+
+        <CheckBox
+            android:id="@+id/pyMultiThreading"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/advancePython"
+            android:layout_alignLeft="@id/basicSyntax"
+            android:layout_alignStart="@id/basicSyntax"
+            android:text="@string/multiThread"/>
+
+        <CheckBox
+            android:id="@+id/pyCGI"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/pyClassesObjects"
+            android:layout_alignStart="@id/pythonIntro"
+            android:layout_alignLeft="@id/pythonIntro"
+            android:text="@string/cgi"/>
+
+        <CheckBox
+            android:id="@+id/pyDatabase"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/pyClassesObjects"
+            android:layout_alignLeft="@id/basicSyntax"
+            android:layout_alignStart="@id/basicSyntax"
+            android:text="@string/database"/>
+
+        <CheckBox
+            android:id="@+id/pyGUI"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/pyCGI"
+            android:layout_alignStart="@id/pythonIntro"
+            android:layout_alignLeft="@id/pythonIntro"
+            android:text="@string/gui"/>
+
+    </RelativeLayout>
+
+</ScrollView>

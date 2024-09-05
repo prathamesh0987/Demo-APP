@@ -1,0 +1,361 @@
+<resources>
+    <string name="app_name">SVR InfoTech</string>
+    <string name="engg"><b><u>ENGINEERING</u></b></string>
+    <string name="pl"><b><u>PROGRAMMING LANGUAGE</u></b></string>
+    <string name="admission">ADMISSION</string>
+    <string name="studentInfo">STUDENT INFO</string>
+    <string name="admissionForm"><b><u>ADMISSION FORM</u></b></string>
+    <string name="name">NAME : </string>
+    <string name="contact">CONTACT NO</string>
+    <string name="gender">GENDER : </string>
+    <string name="male">MALE</string>
+    <string name="female">FEMALE</string>
+    <string name="email">EMAIL-ID</string>
+    <string name="qualification">QUALIFICATION</string>
+    <string name="course">COURSE</string>
+    <string name="fee">COURSE FEE</string>
+    <string name="duration">DURATION</string>
+    <string name="joining">JOINING</string>
+    <string name="save">SAVE</string>
+    <string name="dateHint">DD/MM/YYYY</string>
+    <string name="studDetails"><b><u>STUDENT DETAILS</u></b></string>
+    <string name="update">UPDATE</string>
+    <string name="updateDetails"><b><u>UPDATE STUDENT DETAILS</u></b></string>
+    <string name="java">JAVA</string>
+    <string name="python">PYTHON</string>
+    <string name="android">ANDROID</string>
+    <string name="cad">A-CAD</string>
+    <string name="sw">SW</string>
+    <string name="ansys">ANALYSIS SOFTWARE</string>
+    <string name="creo">CREO</string>
+    <string name="catia">CAT</string>
+    <string name="cfd">CFD</string>
+    <string name="hypermesh">HYPERMESH</string>
+    <string name="feast">FEAST</string>
+    <string name="nx">N-X</string>
+    <string name="add">INSERT</string>
+    <string name="delete">DELETE</string>
+    <string name="javaDesc">JAVA SYLLABUS</string>
+    <string name="pythonDesc">PYTHON SYLLABUS</string>
+    <string name="androidDesc">ANDROID SYLLABUS</string>
+    <string name="searchName">ENTER NAME HERE</string>
+    <string name="search">SEARCH</string>
+    <string name="yes">YES</string>
+    <string name="no">NO</string>
+    <string name="login">LOGIN</string>
+    <string name="signup">SIGN UP</string>
+    <string name="username">email-id</string>
+    <string name="password">password</string>
+    <string name="logo">SVR INFOTECH LOGO</string>
+    <string name="logout">Logout</string>
+    <string name="confirmPassword">confirm password</string>
+    <string name="submit">SUBMIT</string>
+    <string name="home">HOME</string>
+    <string name="syllabus">Syllabus</string>
+    <string name="event">Event</string>
+    <string name="exit">EXIT</string>
+    <string name="open">OPEN</string>
+    <string name="close">CLOSE</string>
+    <string name="description">Description</string>
+    <string name="add_post">Add Post</string>
+    <string name="title">Title</string>
+    <string name="post">POST</string>
+    <string name="please_wait">Please Wait&#8230;</string>
+    <string name="userName">full name</string>
+    <string name="mobile">mobile no</string>
+    <string name="eventImage">Event Post</string>
+    <string name="likeImage">Like/Dislike</string>
+    <string name="stud_name">STUDENT NAME</string>
+    <string name="doj">DATE OF JOINING</string>
+    <string name="dob">DATE OF BIRTH</string>
+    <string name="dobDate">DATE FROM CALENDER</string>
+    <string name="dojDate">DATE FROM CALENDER</string>
+    <string name="totalAdmissions">TOTAL ADMISSIONS</string>
+    <string name="totalCollection">TOTAL COLLECTION</string>
+    <string name="serchByName">SEARCH BY NAME</string>
+    <string name="forgotPassword"><u>FORGOT PASSWORD?</u></string>
+
+    <!--Autocad Syllabus -->
+    <string name="introToAutocad"><u>Introduction To Autocad</u></string>
+    <string name="projectionMethod">Projection Method</string>
+    <string name="autocadWindows">Autocad Windows</string>
+    <string name="toolbarCustomization">Toolbar Customization</string>
+    <string name="unit">Unit</string>
+    <string name="ucsIcon">UCS Icon</string>
+    <string name="shortKeys">Shortcut Keys Method</string>
+
+    <string name="twod_sketching"><u>2D Sketching Commands</u></string>
+    <string name="draw">Draw</string>
+    <string name="modify">Modify</string>
+    <string name="properties">Properties</string>
+    <string name="workspace">Workspace</string>
+    <string name="layer">Layer</string>
+    <string name="dimensions">Dimensions</string>
+    <string name="format">Format</string>
+
+    <string name="advCommands"><u>Advanced Commands</u></string>
+    <string name="designCenter">Design Center</string>
+    <string name="option">Option</string>
+    <string name="rasterImage">Raster Image</string>
+    <string name="objectSnap">Object Snap</string>
+    <string name="view">View</string>
+    <string name="dimensionStyle">Dimension Style</string>
+    <string name="commandLine">Command Line Windows</string>
+
+    <string name="isometricModeling"><u>Isometric(3D) Modeling</u></string>
+    <string name="modeling">Modeling</string>
+    <string name="orbit">Orbit</string>
+    <string name="visualStyle">Visual Style</string>
+    <string name="solidEditing">Solid Editing</string>
+    <string name="booleanOperation">Boolean Operation</string>
+
+    <string name="drafting"><u>Drafting/Drawing</u></string>
+    <string name="detailingDrawing">Detailing Drawing</string>
+    <string name="templateCreation">Template Creation</string>
+    <string name="plotting">Plotting</string>
+    <string name="printing">Printing</string>
+    <string name="displayImage">Display Image</string>
+    <string name="saveFile">Save as PDF &amp; DWG</string>
+    <string name="cadSetting">CAD Setting &amp; Customization</string>
+
+    <string name="geometricDimensions"><u>Geometric Dimensions &amp; Tolerance</u></string>
+    <string name="tolerence">Tolerance</string>
+    <string name="limits">Limits</string>
+    <string name="fits">Fits</string>
+    <string name="surfaceFinishing">Surface Finishing</string>
+    <string name="weldingSymbol">Welding Symbol</string>
+
+
+    <!--SolidWorks Syllabus-->
+    <string name="solidworksParamteric"><u>Solidworks Paramteric</u></string>
+    <string name="introductionToCCC">Introduction To CAD/CAM/CAE</string>
+    <string name="designConcept">Design Concept &amp; Procedure</string>
+    <string name="parametricDesign">Concept Of Parameteric Design</string>
+    <string name="fullyDefineSketches">Fully Define Sketches</string>
+
+    <string name="solidPartModeling">Solid Part-Modeling(Basic To Advance)</string>
+    <string name="sheetMetalModeling">Sheet Metal Modeling</string>
+    <string name="weldments">Weldments</string>
+    <string name="holeWizard">Hole Wizard</string>
+    <string name="formingTool">Forming Tool</string>
+    <string name="moldTool">Mold Tool</string>
+
+    <string name="assemblyModeling"><u>Assembly Modeling</u></string>
+    <string name="standardMates">Standard Mates</string>
+    <string name="advanceMates">Advance Mates</string>
+    <string name="mechanicalMates">Mechanical Mates</string>
+
+    <string name="explodedView"><u>Exploded Views</u></string>
+    <string name="mechanismSimulation">Mechanism Simulation</string>
+    <string name="bom">Bills Of Material</string>
+    <string name="productAnimation">Product Animation</string>
+
+    <string name="sheetMetal"><u>Sheet Metal</u></string>
+    <string name="baseFlange">Base Flange</string>
+    <string name="edgeFlange">Edge Flange</string>
+    <string name="hem">Hem</string>
+    <string name="miterFlange">Miter Flange</string>
+    <string name="corner">Corner</string>
+    <string name="foldUnfold">Fold-Unfold</string>
+    <string name="flatten">Flatten</string>
+    <string name="vent">Vent</string>
+    <string name="massProperties">Mass Properties</string>
+    <string name="gussets">Gussets</string>
+
+    <string name="lf">Limits &amp; Fits</string>
+    <string name="saveAs">Save As PDF, IGES, STEP, DWG</string>
+
+
+    <!--Catia Syllabus-->
+    <string name="catiaV5R20"><u>Catia V5 R20</u></string>
+    <string name="fullyConstrainedSketches">Fully Constrained Sketches</string>
+    <string name="animationConstraint">Animation Constraint</string>
+    <string name="machineComponent">Machine Component &amp; Products</string>
+    <string name="threeDText">3D Text</string>
+    <string name="designTools">Design Tools</string>
+
+    <string name="assemblyDesigning"><u>Assembly Designing</u></string>
+    <string name="bottomUpAssembly">Bottom Up Assembly</string>
+    <string name="topDownAssembly">Top Down Assembly</string>
+    <string name="assemblyWithFullyConstraint">Assembly With Fully Constraint</string>
+    <string name="scenes">Scenes</string>
+
+    <string name="rendering"><u>Rendering</u></string>
+    <string name="applyMaterial">Apply Material</string>
+    <string name="massCalculation">Mass Calculation</string>
+    <string name="catiaSave">Save As IGES &amp; Step</string>
+
+    <string name="sheetMetalParameters">Sheet Metal Parameters</string>
+    <string name="flange">Flange</string>
+    <string name="bend">Bend</string>
+    <string name="stamping">Stamping</string>
+    <string name="bridge">Bridge</string>
+    <string name="hooper">Hooper</string>
+    <string name="rolledWall">Rolled Wall</string>
+
+    <string name="surfacing"><u>Surfacing</u></string>
+    <string name="extractSurface">Extract Surface</string>
+    <string name="projection">Projection</string>
+    <string name="combine">Combine</string>
+    <string name="sweep">Sweep</string>
+    <string name="fill">Fill</string>
+    <string name="advanceSurface">Advance Surface</string>
+    <string name="biwTemplate">BiW Template</string>
+
+    <string name="dmuKinematics"><u>DMU Kinematics</u></string>
+    <string name="kinematicsJoin">Kinematics Join</string>
+    <string name="spaceAnalysis">DMU Space Analysis</string>
+
+    <string name="draft"><u>Drafting</u></string>
+    <string name="frametitleBlock">Frame &amp; Title Block</string>
+    <string name="sheetBackground">Sheet Background</string>
+
+    <string name="joinFor">Join For : </string>
+
+    <!--Java Syllabus-->
+    <string name="fundamentalIntro"><u>Introduction To Fundamentals Of Java</u></string>
+    <string name="javaIntro">Introduction To Java</string>
+    <string name="differenceJavaC">Difference Between Java &amp; C++</string>
+    <string name="javaFeatures">Java Features</string>
+    <string name="javaEnvironment">Java Environment</string>
+
+    <string name="javaBasics"><u>Java Basics</u></string>
+    <string name="namingConvention">Naming Convention</string>
+    <string name="classesObjects">Classes &amp; Object</string>
+    <string name="operstors">Operators</string>
+    <string name="loops">Loops</string>
+    <string name="controlStatement">Control Statement</string>
+    <string name="string">String</string>
+    <string name="stringBuffer">String Buffer</string>
+    <string name="stringBuilder">String Builder</string>
+    <string name="array">Array</string>
+    <string name="keywords">Keywords</string>
+    <string name="packages">Packages</string>
+
+    <string name="javaOOPS"><u>Java OOPS Concept</u></string>
+    <string name="inheritance">Inheritance</string>
+    <string name="polymorphism">Polymorphism</string>
+    <string name="abstraction">Abstraction</string>
+    <string name="encapsulation">Encapsulation</string>
+
+    <string name="jFeatures"><u>Java Features</u></string>
+    <string name="threads">Thread</string>
+    <string name="multiThread">Multi-Threading</string>
+    <string name="deadLock">Dead Lock</string>
+    <string name="synchronization">Synchronized</string>
+    <string name="exceptionHandling">Exception Handling</string>
+    <string name="checked">Checked Exception</string>
+    <string name="unchecked">Unchecked Exception</string>
+    <string name="fileHandling">File Handling</string>
+    <string name="ioOperations">I/O Operations</string>
+
+    <string name="advanceJava"><u>Advance Java</u></string>
+    <string name="collection">Collection</string>
+    <string name="wrapperClasses">Wrapper Classes</string>
+    <string name="database">Database</string>
+    <string name="awtSwing">AWT &amp; Swing</string>
+    <string name="jsp">JSP</string>
+    <string name="servlet">Servlet</string>
+
+    <!--Android Syllabus-->
+    <string name="androidIntro"><u>Introduction To Android</u></string>
+    <string name="androidHistory">Android History</string>
+    <string name="androidVersions">Android Versions</string>
+    <string name="androidArch">Android Architecture</string>
+    <string name="manifestFile">Manifest File</string>
+    <string name="rJava">R.Java</string>
+    <string name="androidStudio">Android Studio</string>
+
+    <string name="androidBasics"><u>Android Basics</u></string>
+    <string name="lifeCycle">Activity Life Cycle</string>
+    <string name="coreBlocks">Core Building Blocks Of Android</string>
+    <string name="implicitIntent">Implicit Intent</string>
+    <string name="explicitIntent">Explicit Intent</string>
+    <string name="uiWidgets">UI Widgets</string>
+
+    <string name="advanceAndroid"><u>Advance Android</u></string>
+    <string name="jsonParsing">JSON Parsing</string>
+    <string name="recyclerView">RecyclerView</string>
+    <string name="sqLite">SQLite</string>
+    <string name="handler">Handler</string>
+    <string name="asyncTask">AsyncTask</string>
+    <string name="animation">Animation</string>
+    <string name="fragments">Fragments</string>
+
+    <string name="androidCoreBlocks"><u>Core Building Blocks Of Android</u></string>
+    <string name="activity">Activity</string>
+    <string name="intent">Intent</string>
+    <string name="services">Services</string>
+    <string name="broadcastReceiver">Broadcast Receiver</string>
+    <string name="contentProvider">Content Provider</string>
+
+
+    <!--Python Syllabus-->
+    <string name="pythonIntroTitle"><u>Introduction To Python Programming</u></string>
+    <string name="pythonIntro">Introduction To Python</string>
+    <string name="basicSyntax">Basic Syntax</string>
+    <string name="pythonFeatures">Python Features</string>
+
+    <string name="pythonBasics"><u>Python Basics</u></string>
+    <string name="identifiers">Identifiers</string>
+    <string name="quotation">Quotation</string>
+    <string name="indentation">Indentation</string>
+    <string name="multilineStatement">Multi-Line Statement</string>
+    <string name="variableTypes">Variable Types</string>
+    <string name="operators">Operators</string>
+    <string name="comments">Comments</string>
+
+    <string name="corePython"><u>Core Python</u></string>
+    <string name="sequence">Sequence</string>
+    <string name="tuples">Tuples</string>
+    <string name="list">List</string>
+    <string name="dictionary">Dictionary</string>
+    <string name="set">Set</string>
+
+    <string name="advancePython"><u>Advance Python</u></string>
+    <string name="cgi">Common Gateway Interface</string>
+    <string name="gui">Graphical User Interface</string>
+
+    <string name="nowPaying">Now Paying : </string>
+    <string name="enterAmount">Enter Amount Here</string>
+
+    <string name="faculty">FACULTY </string>
+    <string name="totalFee">TOTAL FEE </string>
+    <string name="feeCollected">FEE COLLECTED </string>
+    <string name="due">FEE DUE </string>
+
+    <string name="student">By Student</string>
+    <string name="employee">By Employee</string>
+
+    <string-array name="menu_items">
+        <item>HOME</item>
+        <item>NEW ADMISSION</item>
+        <item>TOTAL ADMISSION</item>
+        <item>COLLECTION</item>
+        <item>SYLLABUS</item>
+        <item>EVENT</item>
+        <item>GROUP CHAT</item>
+        <item>LOG OUT</item>
+    </string-array>
+
+    <string name="courseContent">Course Content</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_desc">Navigation header</string>
+    <string name="action_settings">Settings</string>
+
+    <string name="title_activity_main">SVR INFOTECH</string>
+
+    <string name="setStatus">Status &amp; Subject</string>
+    <string name="status">Status : </string>
+    <string name="courses">Courses : </string>
+    <string name="subjectName">Subject Name : </string>
+    <string name="newAdmission">New Admission</string>
+    <string name="totalAdmission">Total Admissions</string>
+    <string name="groupChat">Group Chat</string>
+    <string name="formula">Formulae</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+</resources>

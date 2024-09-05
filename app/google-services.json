@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "456435390560",
+    "firebase_url": "https://svr-infotech.firebaseio.com",
+    "project_id": "svr-infotech",
+    "storage_bucket": "svr-infotech.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:456435390560:android:15bde3e61033f912",
+        "android_client_info": {
+          "package_name": "com.svrinfotech"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "456435390560-kurjn4ckulek30n60po7fca9h2looqd0.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.svrinfotech",
+            "certificate_hash": "e641fe3caec5822eb7fbf4c81945e7bb8630c4a7"
+          }
+        },
+        {
+          "client_id": "456435390560-8gln7vfv9vhvpf8vo85mvoatqjq35lm5.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBm0OiVDhZgXDxKdpNMat8qoZu0aUOa3Vw"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "456435390560-8gln7vfv9vhvpf8vo85mvoatqjq35lm5.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

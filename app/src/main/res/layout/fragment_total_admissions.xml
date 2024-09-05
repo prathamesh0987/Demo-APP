@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/totalAdmissionLayout"
+    android:background="@drawable/total_admission"
+    android:padding="@dimen/padding10"
+    tools:context=".TotalAdmissions">
+
+    <TextView
+        android:id="@+id/admissions"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="50dp"
+        android:text="@string/totalAdmissions"
+        android:textColor="@android:color/holo_blue_bright"
+        android:textSize="@dimen/titleSize" />
+
+    <LinearLayout
+        android:id="@+id/admissionLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_below="@+id/admissions"
+        android:layout_marginTop="30dp"
+        android:padding="20dp">
+
+        <LinearLayout
+            android:id="@+id/engineeringLayout1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            style="?android:attr/buttonBarStyle"
+            android:weightSum="3">
+
+            <Button
+                android:id="@+id/cadAdmission"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/cad"
+                style="?android:attr/buttonBarButtonStyle"
+                android:layout_weight="1" />
+
+            <Button
+                android:id="@+id/swAdmission"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/sw"
+                style="?android:attr/buttonBarButtonStyle"
+                android:layout_weight="1"/>
+
+            <Button
+                android:id="@+id/ansysAdmission"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/ansys"
+                style="?android:attr/buttonBarButtonStyle"
+                android:layout_weight="1"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/engineeringLayout2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="30dp"
+            style="?android:attr/buttonBarStyle"
+            android:weightSum="3">
+
+            <Button
+                android:id="@+id/creoAdmission"
+                style="?android:attr/buttonBarButtonStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/creo"/>
+
+            <Button
+                android:id="@+id/catiaAdmission"
+                style="?android:attr/buttonBarButtonStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/catia"/>
+
+            <Button
+                android:id="@+id/nxAdmission"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/nx"
+                style="?android:attr/buttonBarButtonStyle"
+                android:layout_weight="1"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/engineeringLayout3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="30dp"
+            style="?android:attr/buttonBarStyle"
+            android:weightSum="3">
+
+            <Button
+                android:id="@+id/cfdAdmission"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/cfd"
+                style="?android:attr/buttonBarButtonStyle"
+                android:layout_weight="1" />
+
+            <Button
+                android:id="@+id/hypermeshAdmission"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/hypermesh"
+                style="?android:attr/buttonBarButtonStyle"
+                android:layout_weight="1"/>
+
+            <Button
+                android:id="@+id/feastAdmission"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/feast"
+                style="?android:attr/buttonBarButtonStyle"
+                android:layout_weight="1"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/programmingLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="30dp"
+            style="?android:attr/buttonBarStyle"
+            android:weightSum="3">
+
+            <Button
+                android:id="@+id/androidAdmission"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/android"
+                style="?android:attr/buttonBarButtonStyle"
+                android:layout_weight="1" />
+
+            <Button
+                android:id="@+id/javaAdmission"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/java"
+                style="?android:attr/buttonBarButtonStyle"
+                android:layout_weight="1"/>
+
+            <Button
+                android:id="@+id/pythonAdmission"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/python"
+                style="?android:attr/buttonBarButtonStyle"
+                android:layout_weight="1"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</RelativeLayout>

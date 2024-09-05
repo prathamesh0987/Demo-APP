@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/svrinfotechLayout"
+    android:background="@drawable/main_background"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context=".MainActivity"
+    tools:showIn="@layout/app_bar_main">
+
+        <TextView
+            android:id="@+id/engineeringTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="45dp"
+            android:text="@string/engg"
+            android:textColor="@color/title"
+            android:fontFamily="sans-serif"
+            android:textSize="17sp"/>
+
+        <LinearLayout
+            android:id="@+id/cadLinearLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="5dp"
+            android:layout_gravity="center"
+            style="?android:attr/buttonBarStyle"
+            android:layout_below="@id/engineeringTitle">
+
+            <Button
+                android:id="@+id/cadButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/cad"
+                android:layout_weight="1"
+                style="?android:attr/buttonBarButtonStyle"/>
+
+            <Button
+                android:id="@+id/swButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/sw"
+                android:layout_weight="1"
+                style="?android:attr/buttonBarButtonStyle"/>
+
+            <Button
+                android:id="@+id/catiaButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/catia"
+                android:layout_weight="1"
+                style="?android:attr/buttonBarButtonStyle"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/caeLinearLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:orientation="horizontal"
+            android:weightSum="1"
+            style="?android:attr/buttonBarStyle"
+            android:layout_below="@id/cadLinearLayout">
+
+            <Button
+                android:id="@+id/ansysButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/ansys"
+                android:layout_weight="1"
+                style="?android:attr/buttonBarButtonStyle"/>
+        </LinearLayout>
+
+
+        <TextView
+            android:id="@+id/programmingTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="15dp"
+            android:text="@string/pl"
+            android:textColor="@color/title"
+            android:fontFamily="sans-serif"
+            android:textSize="17sp"
+            android:layout_below="@id/caeLinearLayout"/>
+
+        <LinearLayout
+            android:id="@+id/progLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="5dp"
+            android:weightSum="3"
+            style="?android:attr/buttonBarStyle"
+            android:layout_below="@id/programmingTitle">
+
+            <Button
+                android:id="@+id/javaButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/java"
+                android:layout_weight="1"
+                style="?android:attr/buttonBarButtonStyle"/>
+
+            <Button
+                android:id="@+id/pythonButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/python"
+                android:layout_weight="1"
+                style="?android:attr/buttonBarButtonStyle"/>
+
+            <Button
+                android:id="@+id/androidButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/android"
+                android:layout_weight="1"
+                style="?android:attr/buttonBarButtonStyle"/>
+
+        </LinearLayout>
+
+</RelativeLayout>

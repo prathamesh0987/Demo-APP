@@ -1,0 +1,362 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.svrinfotech.SolidworksSyllabus">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/solidworksParametric"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="5dp"
+            android:layout_marginTop="20dp"
+            android:text="@string/solidworksParamteric" />
+
+        <CheckBox
+            android:id="@+id/swIntro"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/solidworksParametric"
+            android:layout_marginLeft="20dp"
+            android:layout_marginStart="20dp"
+            android:text="@string/introductionToCCC" />
+
+        <CheckBox
+            android:id="@+id/designConcept"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/swIntro"
+            android:layout_alignStart="@+id/swIntro"
+            android:layout_below="@id/swIntro"
+            android:text="@string/designConcept" />
+
+        <CheckBox
+            android:id="@+id/parametricDesign"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/swIntro"
+            android:layout_alignStart="@+id/swIntro"
+            android:layout_below="@id/designConcept"
+            android:text="@string/parametricDesign" />
+
+        <CheckBox
+            android:id="@+id/designSketeches"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/swIntro"
+            android:layout_alignStart="@id/swIntro"
+            android:layout_below="@+id/parametricDesign"
+            android:text="@string/fullyDefineSketches" />
+
+        <TextView
+            android:id="@+id/solidPartModeling"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/designSketeches"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="5dp"
+            android:layout_marginTop="5dp"
+            android:text="@string/solidPartModeling" />
+
+        <CheckBox
+            android:id="@+id/sheetMetalModeling"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@id/swIntro"
+            android:layout_alignStart="@id/swIntro"
+            android:layout_below="@id/solidPartModeling"
+            android:text="@string/sheetMetalModeling" />
+
+        <CheckBox
+            android:id="@+id/weldments"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@id/swIntro"
+            android:layout_alignStart="@id/swIntro"
+            android:layout_below="@id/sheetMetalModeling"
+            android:layout_marginEnd="15dp"
+            android:layout_marginRight="15dp"
+            android:text="@string/weldments" />
+
+        <CheckBox
+            android:id="@+id/holeWizard"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/sheetMetalModeling"
+            android:layout_toEndOf="@+id/sheetMetalModeling"
+            android:layout_toRightOf="@+id/weldments"
+            android:text="@string/holeWizard" />
+
+        <CheckBox
+            android:id="@+id/formingTool"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@id/swIntro"
+            android:layout_alignStart="@+id/swIntro"
+            android:layout_below="@+id/weldments"
+            android:text="@string/formingTool" />
+
+        <CheckBox
+            android:id="@+id/moldTool"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@id/holeWizard"
+            android:layout_alignStart="@id/holeWizard"
+            android:layout_below="@+id/weldments"
+            android:text="@string/moldTool" />
+
+        <TextView
+            android:id="@+id/assemblyModeling"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/formingTool"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="5dp"
+            android:layout_marginTop="5dp"
+            android:text="@string/assemblyModeling" />
+
+        <CheckBox
+            android:id="@+id/standardMates"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/swIntro"
+            android:layout_alignStart="@id/swIntro"
+            android:layout_below="@+id/assemblyModeling"
+            android:text="@string/standardMates" />
+
+        <CheckBox
+            android:id="@+id/advanceMates"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/holeWizard"
+            android:layout_alignStart="@id/holeWizard"
+            android:layout_below="@id/assemblyModeling"
+            android:text="@string/advanceMates" />
+
+        <CheckBox
+            android:id="@+id/mechanicalMates"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@id/swIntro"
+            android:layout_alignStart="@id/swIntro"
+            android:layout_below="@id/standardMates"
+            android:text="@string/mechanicalMates" />
+
+        <TextView
+            android:id="@+id/explodedView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/mechanicalMates"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="5dp"
+            android:layout_marginTop="5dp"
+            android:text="@string/explodedView" />
+
+        <CheckBox
+            android:id="@+id/mechanismSimulation"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/swIntro"
+            android:layout_alignStart="@id/swIntro"
+            android:layout_below="@+id/explodedView"
+            android:text="@string/mechanismSimulation" />
+
+        <CheckBox
+            android:id="@+id/billsOfMaterial"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@id/swIntro"
+            android:layout_alignStart="@id/swIntro"
+            android:layout_below="@id/mechanismSimulation"
+            android:text="@string/bom" />
+
+        <CheckBox
+            android:id="@+id/productAnimation"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@id/holeWizard"
+            android:layout_alignStart="@id/holeWizard"
+            android:layout_below="@id/mechanismSimulation"
+            android:text="@string/productAnimation" />
+
+        <TextView
+            android:id="@+id/sheetMetal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/productAnimation"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="5dp"
+            android:layout_marginTop="5dp"
+            android:text="@string/sheetMetal" />
+
+        <CheckBox
+            android:id="@+id/baseFlange"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/swIntro"
+            android:layout_alignStart="@id/swIntro"
+            android:layout_below="@+id/sheetMetal"
+            android:text="@string/baseFlange" />
+
+        <CheckBox
+            android:id="@+id/edgeFlange"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/sheetMetal"
+            android:layout_alignLeft="@id/holeWizard"
+            android:layout_alignStart="@id/holeWizard"
+            android:text="@string/edgeFlange"/>
+
+        <CheckBox
+            android:id="@+id/miterFlange"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/baseFlange"
+            android:layout_alignLeft="@+id/swIntro"
+            android:layout_alignStart="@id/swIntro"
+            android:text="@string/miterFlange"/>
+
+        <CheckBox
+            android:id="@+id/hem"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/baseFlange"
+            android:layout_alignLeft="@id/holeWizard"
+            android:layout_alignStart="@id/holeWizard"
+            android:text="@string/hem"/>
+
+        <CheckBox
+            android:id="@+id/corner"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/miterFlange"
+            android:layout_alignLeft="@id/swIntro"
+            android:layout_alignStart="@id/swIntro"
+            android:text="@string/corner"/>
+        
+        <CheckBox
+            android:id="@+id/foldUnfold"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/miterFlange"
+            android:layout_alignLeft="@+id/holeWizard"
+            android:layout_alignStart="@id/holeWizard"
+            android:text="@string/foldUnfold"/>
+
+        <CheckBox
+            android:id="@+id/flatten"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/corner"
+            android:layout_alignLeft="@id/swIntro"
+            android:layout_alignStart="@id/swIntro"
+            android:text="@string/flatten"/>
+
+        <CheckBox
+            android:id="@+id/vent"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/corner"
+            android:layout_alignLeft="@+id/holeWizard"
+            android:layout_alignStart="@id/holeWizard"
+            android:text="@string/vent"/>
+
+        <CheckBox
+            android:id="@+id/massProperties"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/flatten"
+            android:layout_alignLeft="@+id/swIntro"
+            android:layout_alignStart="@id/swIntro"
+            android:text="@string/massProperties"/>
+
+        <CheckBox
+            android:id="@+id/gussets"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/flatten"
+            android:layout_alignLeft="@id/holeWizard"
+            android:layout_alignStart="@id/holeWizard"
+            android:text="@string/gussets"/>
+
+        <TextView
+            android:id="@+id/drafting"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/gussets"
+            android:layout_centerHorizontal="true"
+            android:text="@string/drafting"
+            android:layout_marginBottom="5dp"
+            android:layout_marginTop="5dp"/>
+
+        <CheckBox
+            android:id="@+id/swProjectionMethod"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/drafting"
+            android:layout_alignLeft="@+id/swIntro"
+            android:layout_alignStart="@id/swIntro"
+            android:text="@string/projectionMethod"/>
+
+        <CheckBox
+            android:id="@+id/swTemplateCreation"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/drafting"
+            android:layout_alignLeft="@+id/holeWizard"
+            android:layout_alignStart="@id/holeWizard"
+            android:text="@string/templateCreation"/>
+
+        <CheckBox
+            android:id="@+id/detailing"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/swProjectionMethod"
+            android:layout_alignLeft="@+id/swIntro"
+            android:layout_alignStart="@+id/swIntro"
+            android:text="@string/detailingDrawing"/>
+
+        <CheckBox
+            android:id="@+id/swGeometricDimension"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/swProjectionMethod"
+            android:layout_alignLeft="@+id/holeWizard"
+            android:layout_alignStart="@+id/holeWizard"
+            android:text="@string/geometricDimensions"/>
+
+        <CheckBox
+            android:id="@+id/swTolerence"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/detailing"
+            android:layout_alignLeft="@id/swIntro"
+            android:layout_alignStart="@+id/swIntro"
+            android:text="@string/tolerence"/>
+
+        <CheckBox
+            android:id="@+id/limitsFits"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/detailing"
+            android:layout_alignLeft="@id/holeWizard"
+            android:layout_alignStart="@id/holeWizard"
+            android:text="@string/lf"/>
+
+        <CheckBox
+            android:id="@+id/swSaveAs"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/swTolerence"
+            android:layout_alignLeft="@id/swIntro"
+            android:layout_alignStart="@id/swIntro"
+            android:text="@string/saveAs"/>
+
+    </RelativeLayout>
+
+</ScrollView>

@@ -1,0 +1,301 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_centerInParent="true"
+    tools:context="com.svrinfotech.TotalCollection">
+
+
+        <TextView
+            android:id="@+id/faculty"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/tableTitle"
+            android:text="@string/faculty"
+            android:layout_margin="@dimen/padding10"/>
+
+
+        <TextView
+            android:id="@+id/totalFee"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/tableTitle"
+            android:text="@string/totalFee"
+            android:layout_toEndOf="@id/faculty"
+            android:layout_toRightOf="@id/faculty"
+            android:layout_margin="@dimen/padding10"/>
+
+        <TextView
+            android:id="@+id/feeCollected"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/tableTitle"
+            android:text="@string/feeCollected"
+            android:layout_toRightOf="@id/totalFee"
+            android:layout_toEndOf="@id/totalFee"
+            android:layout_margin="@dimen/padding10"/>
+
+
+        <TextView
+            android:id="@+id/totalDue"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/tableTitle"
+            android:text="@string/due"
+            android:layout_gravity="center"
+            android:layout_toEndOf="@id/feeCollected"
+            android:layout_toRightOf="@id/feeCollected"
+            android:layout_margin="@dimen/padding10"/>
+
+
+        <TextView
+            android:id="@+id/autoCADFaculty"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/otherRow"
+            android:text="@string/cad"
+            android:layout_below="@id/faculty"
+            android:layout_margin="@dimen/padding10"/>
+
+        <TextView
+            android:id="@+id/autoCADTotalFee"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/otherRow"
+            android:layout_below="@id/totalFee"
+            android:layout_alignLeft="@id/faculty"
+            android:layout_alignStart="@id/totalFee"
+            android:layout_margin="@dimen/padding10" />
+
+
+        <TextView
+            android:id="@+id/autoCADCollectedFee"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/otherRow"
+            android:layout_below="@id/faculty"
+            android:layout_alignLeft="@id/feeCollected"
+            android:layout_alignStart="@id/feeCollected"
+            android:layout_margin="@dimen/padding10" />
+
+
+        <TextView
+            android:id="@+id/autoCADDueFee"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/otherRow"
+            android:layout_below="@id/faculty"
+            android:layout_alignLeft="@id/totalDue"
+            android:layout_alignStart="@id/totalDue"
+            android:layout_margin="@dimen/padding10" />
+
+
+        <TextView
+            android:id="@+id/swFaculty"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/otherRow"
+            android:text="@string/sw"
+            android:layout_below="@id/autoCADFaculty"
+            android:layout_margin="@dimen/padding10"/>
+
+
+        <TextView
+            android:id="@+id/swTotalFee"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/otherRow"
+            android:layout_below="@id/autoCADFaculty"
+            android:layout_alignLeft="@id/autoCADTotalFee"
+            android:layout_alignStart="@id/autoCADTotalFee"
+            android:layout_marginTop="@dimen/padding10"/>
+
+
+        <TextView
+            android:id="@+id/swCollectedFee"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/otherRow"
+            android:layout_below="@id/autoCADFaculty"
+            android:layout_alignStart="@id/autoCADCollectedFee"
+            android:layout_alignLeft="@id/autoCADCollectedFee"
+            android:layout_marginTop="@dimen/padding10" />
+
+
+        <TextView
+            android:id="@+id/swDueFee"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/otherRow"
+            android:layout_below="@id/autoCADFaculty"
+            android:layout_alignLeft="@id/autoCADDueFee"
+            android:layout_alignStart="@id/autoCADDueFee"
+            android:layout_marginTop="@dimen/padding10" />
+
+
+        <TextView
+            android:id="@+id/catiaFaculty"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/otherRow"
+            android:text="@string/catia"
+            android:layout_below="@id/swFaculty"
+            android:layout_margin="@dimen/padding10"/>
+
+
+        <TextView
+            android:id="@+id/catiaTotalFee"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/otherRow"
+            android:layout_below="@id/swFaculty"
+            android:layout_alignLeft="@id/swTotalFee"
+            android:layout_alignStart="@id/swTotalFee"
+            android:layout_marginTop="@dimen/padding10" />
+
+
+        <TextView
+            android:id="@+id/catiaCollectedFee"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/otherRow"
+            android:layout_below="@id/swFaculty"
+            android:layout_alignLeft="@id/swCollectedFee"
+            android:layout_alignStart="@id/swCollectedFee"
+            android:layout_marginTop="@dimen/padding10" />
+
+
+        <TextView
+            android:id="@+id/catiaDueFee"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/otherRow"
+            android:layout_below="@id/swFaculty"
+            android:layout_alignLeft="@id/swDueFee"
+            android:layout_alignStart="@id/swDueFee"
+            android:layout_marginTop="@dimen/padding10" />
+
+
+        <TextView
+            android:id="@+id/javaFaculty"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/otherRow"
+            android:text="@string/java"
+            android:layout_below="@id/catiaFaculty"
+            android:layout_margin="@dimen/padding10"/>
+
+
+        <TextView
+            android:id="@+id/javaTotalFee"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/otherRow"
+            android:layout_below="@id/catiaFaculty"
+            android:layout_alignLeft="@id/catiaTotalFee"
+            android:layout_alignStart="@id/catiaTotalFee"
+            android:layout_marginTop="@dimen/padding10" />
+
+
+        <TextView
+            android:id="@+id/javaCollectedFee"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/otherRow"
+            android:layout_below="@id/catiaFaculty"
+            android:layout_alignLeft="@id/catiaCollectedFee"
+            android:layout_alignStart="@id/catiaCollectedFee"
+            android:layout_marginTop="@dimen/padding10" />
+
+        <TextView
+            android:id="@+id/javaDueFee"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/otherRow"
+            android:layout_below="@id/catiaFaculty"
+            android:layout_alignLeft="@id/catiaDueFee"
+            android:layout_alignStart="@id/catiaDueFee"
+            android:layout_marginTop="@dimen/padding10" />
+
+        <TextView
+            android:id="@+id/androidFaculty"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/otherRow"
+            android:text="@string/android"
+            android:layout_below="@id/javaFaculty"
+            android:layout_margin="@dimen/padding10" />
+
+
+        <TextView
+            android:id="@+id/androidTotalFee"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/otherRow"
+            android:layout_below="@id/javaFaculty"
+            android:layout_alignLeft="@id/javaTotalFee"
+            android:layout_alignStart="@id/javaTotalFee"
+            android:layout_marginTop="@dimen/padding10" />
+
+        <TextView
+            android:id="@+id/androidCollectedFee"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/otherRow"
+            android:layout_below="@id/javaFaculty"
+            android:layout_alignLeft="@id/javaCollectedFee"
+            android:layout_alignStart="@id/javaCollectedFee"
+            android:layout_marginTop="@dimen/padding10" />
+
+        <TextView
+            android:id="@+id/androidDueFee"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/otherRow"
+            android:layout_below="@id/javaFaculty"
+            android:layout_alignLeft="@id/javaDueFee"
+            android:layout_alignStart="@id/javaDueFee"
+            android:layout_marginTop="@dimen/padding10" />
+
+
+        <TextView
+            android:id="@+id/pythonFaculty"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/otherRow"
+            android:text="@string/python"
+            android:layout_below="@id/androidFaculty"
+            android:layout_margin="@dimen/padding10"/>
+
+        <TextView
+            android:id="@+id/pythonTotalFee"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/otherRow"
+            android:layout_below="@id/androidFaculty"
+            android:layout_alignLeft="@id/androidTotalFee"
+            android:layout_alignStart="@id/androidTotalFee"
+            android:layout_marginTop="@dimen/padding10" />
+
+        <TextView
+            android:id="@+id/pythonCollectedFee"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/otherRow"
+            android:layout_below="@id/androidFaculty"
+            android:layout_alignLeft="@id/androidCollectedFee"
+            android:layout_alignStart="@id/androidCollectedFee"
+            android:layout_marginTop="@dimen/padding10" />
+
+        <TextView
+            android:id="@+id/pythonDueFee"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/otherRow"
+            android:layout_below="@id/androidFaculty"
+            android:layout_alignLeft="@id/androidDueFee"
+            android:layout_alignStart="@id/androidDueFee"
+            android:layout_marginTop="@dimen/padding10" />
+
+
+</RelativeLayout>

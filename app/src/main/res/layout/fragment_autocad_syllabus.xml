@@ -1,0 +1,416 @@
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.svrinfotech.AutocadSyllabus">
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:scrollbars="vertical">
+
+    <TextView
+        android:id="@+id/cadIntro"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/introToAutocad"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="5dp"/>
+
+    <CheckBox
+        android:id="@+id/projectionMethod"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/cadIntro"
+        android:layout_marginLeft="20dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="15dp"
+        android:layout_marginRight="15dp"
+        android:text="@string/projectionMethod"/>
+
+    <CheckBox
+        android:id="@+id/autocadWindows"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/cadIntro"
+        android:layout_toEndOf="@+id/projectionMethod"
+        android:layout_toRightOf="@+id/projectionMethod"
+        android:text="@string/autocadWindows"/>
+
+
+    <CheckBox
+        android:id="@+id/unit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/unit"
+        android:layout_below="@+id/projectionMethod"
+        android:layout_alignLeft="@+id/projectionMethod"
+        android:layout_alignStart="@+id/projectionMethod"/>
+
+    <CheckBox
+        android:id="@+id/toolbarCustomization"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/toolbarCustomization"
+        android:layout_below="@+id/projectionMethod"
+        android:layout_alignStart="@+id/autocadWindows"
+        android:layout_alignLeft="@+id/autocadWindows"
+        />
+
+    <CheckBox
+        android:id="@+id/ucsIcon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/ucsIcon"
+        android:layout_below="@+id/unit"
+        android:layout_alignStart="@+id/projectionMethod"
+        android:layout_alignLeft="@+id/projectionMethod"/>
+
+    <CheckBox
+        android:id="@+id/shortcutKeys"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/shortKeys"
+        android:layout_below="@id/unit"
+        android:layout_alignLeft="@id/toolbarCustomization"
+        android:layout_alignStart="@id/toolbarCustomization"/>
+
+    <TextView
+        android:id="@+id/twodSketching"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/twod_sketching"
+        android:layout_below="@id/ucsIcon"
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="5dp"
+        android:layout_centerHorizontal="true"/>
+
+
+
+        <CheckBox
+            android:id="@+id/draw"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/draw"
+            android:layout_below="@id/twodSketching"
+            android:layout_alignLeft="@id/projectionMethod"
+            android:layout_alignStart="@id/projectionMethod"
+            android:layout_marginRight="50dp"
+            android:layout_marginEnd="50dp"/>
+
+        <CheckBox
+            android:id="@+id/modify"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/modify"
+            android:layout_below="@+id/twodSketching"
+            android:layout_toRightOf="@+id/draw"
+            android:layout_toEndOf="@+id/draw"
+            android:layout_marginRight="50dp"
+            android:layout_marginEnd="50dp"/>
+
+        <CheckBox
+            android:id="@+id/properties"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/properties"
+            android:layout_below="@+id/twodSketching"
+            android:layout_toRightOf="@+id/modify"
+            android:layout_toEndOf="@+id/modify"/>
+
+        <CheckBox
+            android:id="@+id/workspace"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/workspace"
+            android:layout_below="@+id/draw"
+            android:layout_alignStart="@+id/draw"
+            android:layout_alignLeft="@id/draw"/>
+
+        <CheckBox
+            android:id="@+id/layer"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/layer"
+            android:layout_below="@+id/draw"
+            android:layout_alignStart="@+id/modify"
+            android:layout_alignLeft="@id/modify"/>
+
+        <CheckBox
+            android:id="@+id/dimensions"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/dimensions"
+            android:layout_below="@+id/draw"
+            android:layout_alignStart="@+id/properties"
+            android:layout_alignLeft="@id/properties"/>
+
+    <CheckBox
+        android:id="@+id/format"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/format"
+        android:layout_below="@+id/workspace"
+        android:layout_alignStart="@+id/draw"
+        android:layout_alignLeft="@id/draw"/>
+
+    <TextView
+        android:id="@+id/advanceCommands"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/advCommands"
+        android:layout_below="@+id/format"
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="5dp"
+        android:layout_centerHorizontal="true" />
+
+    <CheckBox
+        android:id="@+id/designCenter"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/designCenter"
+        android:layout_below="@id/advanceCommands"
+        android:layout_alignLeft="@+id/projectionMethod"
+        android:layout_alignStart="@+id/projectionMethod"/>
+
+    <CheckBox
+        android:id="@+id/options"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/option"
+        android:layout_below="@+id/advanceCommands"
+        android:layout_alignStart="@id/autocadWindows"
+        android:layout_alignLeft="@+id/autocadWindows"/>
+
+    <CheckBox
+        android:id="@+id/rasterImage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/rasterImage"
+        android:layout_below="@+id/designCenter"
+        android:layout_alignLeft="@id/projectionMethod"
+        android:layout_alignStart="@id/projectionMethod"/>
+
+    <CheckBox
+        android:id="@+id/objectSnap"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/objectSnap"
+        android:layout_below="@id/designCenter"
+        android:layout_alignStart="@id/autocadWindows"
+        android:layout_alignLeft="@id/autocadWindows"/>
+
+    <CheckBox
+        android:id="@+id/viewCB"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/view"
+        android:layout_below="@id/rasterImage"
+        android:layout_alignLeft="@+id/projectionMethod"
+        android:layout_alignStart="@id/projectionMethod"/>
+
+    <CheckBox
+        android:id="@+id/dimensionStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/dimensions"
+        android:layout_below="@+id/rasterImage"
+        android:layout_alignStart="@+id/autocadWindows"
+        android:layout_alignLeft="@id/autocadWindows"/>
+
+    <CheckBox
+        android:id="@+id/commandLine"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/commandLine"
+        android:layout_below="@+id/viewCB"
+        android:layout_alignLeft="@id/projectionMethod"
+        android:layout_alignStart="@id/projectionMethod"/>
+
+    <TextView
+        android:id="@+id/isometricModeling"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/isometricModeling"
+        android:layout_below="@id/commandLine"
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="5dp"
+        android:layout_centerHorizontal="true"/>
+
+    <CheckBox
+        android:id="@+id/modeling"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/modeling"
+        android:layout_below="@+id/isometricModeling"
+        android:layout_alignStart="@id/draw"
+        android:layout_alignLeft="@id/draw"/>
+
+    <CheckBox
+        android:id="@+id/visualStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/visualStyle"
+        android:layout_below="@id/isometricModeling"
+        android:layout_alignLeft="@+id/modify"
+        android:layout_alignStart="@id/modify"/>
+
+    <CheckBox
+        android:id="@+id/orbit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/orbit"
+        android:layout_below="@id/isometricModeling"
+        android:layout_alignStart="@id/properties"
+        android:layout_alignLeft="@id/properties"/>
+
+    <CheckBox
+        android:id="@+id/solidEditing"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/solidEditing"
+        android:layout_below="@id/modeling"
+        android:layout_alignLeft="@id/projectionMethod"
+        android:layout_alignStart="@id/projectionMethod"/>
+
+    <CheckBox
+        android:id="@+id/booleanOperation"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/booleanOperation"
+        android:layout_below="@id/modeling"
+        android:layout_alignStart="@id/modify"
+        android:layout_alignLeft="@id/modify"/>
+
+    <TextView
+        android:id="@+id/drafting"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/drafting"
+        android:layout_below="@id/solidEditing"
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="5dp"
+        android:layout_centerHorizontal="true"/>
+
+    <CheckBox
+        android:id="@+id/detailingDrawing"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/detailingDrawing"
+        android:layout_below="@id/drafting"
+        android:layout_alignLeft="@+id/projectionMethod"
+        android:layout_alignStart="@id/projectionMethod"/>
+
+    <CheckBox
+        android:id="@+id/templateCreation"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/templateCreation"
+        android:layout_below="@id/drafting"
+        android:layout_alignLeft="@+id/autocadWindows"
+        android:layout_alignStart="@+id/autocadWindows"/>
+
+    <CheckBox
+        android:id="@+id/plotting"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/plotting"
+        android:layout_below="@id/detailingDrawing"
+        android:layout_alignStart="@+id/draw"
+        android:layout_alignLeft="@id/draw"/>
+
+    <CheckBox
+        android:id="@+id/printing"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/printing"
+        android:layout_below="@id/detailingDrawing"
+        android:layout_alignLeft="@+id/modify"
+        android:layout_alignStart="@id/modify"/>
+
+    <CheckBox
+        android:id="@+id/displayImage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/displayImage"
+        android:layout_below="@id/detailingDrawing"
+        android:layout_alignStart="@id/properties"
+        android:layout_alignLeft="@id/properties"/>
+
+    <CheckBox
+        android:id="@+id/saveFile"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/saveFile"
+        android:layout_below="@id/plotting"
+        android:layout_alignLeft="@+id/projectionMethod"
+        android:layout_alignStart="@id/projectionMethod"/>
+
+    <CheckBox
+        android:id="@+id/cadSetting"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/cadSetting"
+        android:layout_below="@id/plotting"
+        android:layout_alignStart="@id/autocadWindows"
+        android:layout_alignLeft="@id/autocadWindows"/>
+
+    <TextView
+        android:id="@+id/geometricDimension"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/geometricDimensions"
+        android:layout_below="@+id/saveFile"
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="5dp"
+        android:layout_centerHorizontal="true"/>
+
+    <CheckBox
+        android:id="@+id/tolerence"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/tolerence"
+        android:layout_below="@id/geometricDimension"
+        android:layout_alignStart="@id/draw"
+        android:layout_alignLeft="@id/draw"/>
+
+    <CheckBox
+        android:id="@+id/limits"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/limits"
+        android:layout_below="@+id/geometricDimension"
+        android:layout_alignLeft="@+id/modify"
+        android:layout_alignStart="@id/modify"/>
+
+    <CheckBox
+        android:id="@+id/fits"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/fits"
+        android:layout_below="@id/geometricDimension"
+        android:layout_alignStart="@+id/properties"
+        android:layout_alignLeft="@id/properties"/>
+
+    <CheckBox
+        android:id="@+id/surfaceFinishing"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/surfaceFinishing"
+        android:layout_below="@+id/limits"
+        android:layout_alignLeft="@id/projectionMethod"
+        android:layout_alignStart="@id/projectionMethod"/>
+    <CheckBox
+        android:id="@+id/weldingSymbol"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/weldingSymbol"
+        android:layout_below="@+id/limits"
+        android:layout_alignStart="@+id/autocadWindows"
+        android:layout_alignLeft="@id/autocadWindows"/>
+
+    </RelativeLayout>
+
+</ScrollView>

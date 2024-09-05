@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="titleSize">20sp</dimen>
+    <dimen name="descriptionSize">16sp</dimen>
+    <dimen name="likeSize">14sp</dimen>
+    <dimen name="otherDetails">17sp</dimen>
+    <dimen name="radius">10dp</dimen>
+    <dimen name="stroke">1dp</dimen>
+    <dimen name="tableTitle">16sp</dimen>
+    <dimen name="otherRow">14sp</dimen>
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+    <dimen name="nav_header_vertical_spacing">8dp</dimen>
+    <dimen name="nav_header_height">176dp</dimen>
+    <dimen name="fab_margin">16dp</dimen>
+    <dimen name="padding10">10dp</dimen>
+    <dimen name="loginPadding">20dp</dimen>
+    <dimen name="normal_topMargin">20dp</dimen>
+    <dimen name="cell_height">40dp</dimen>
+    <dimen name="row_header_width">55dp</dimen>
+    <dimen name="text_size">12sp</dimen>
+
+    <!-- Material Design TableView dimensions -->
+    <dimen name="md_cell_height">40dp</dimen>
+    <dimen name="md_cell_text_size">13sp</dimen>
+    <dimen name="md_column_header_text_size">13sp</dimen>
+    <dimen name="md_column_header_gap_size">28dp</dimen>
+
+
+    <!-- Overriding the default values of the tableView -->
+    <dimen name="default_row_header_width">55dp</dimen>
+    <dimen name="default_column_header_height">40dp</dimen>
+</resources>

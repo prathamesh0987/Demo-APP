@@ -1,0 +1,380 @@
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/java_background"
+    tools:context="com.svrinfotech.JavaSyllabus">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/fundamentalsOfJava"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/fundamentalIntro"
+            android:layout_marginBottom="5dp"
+            android:layout_marginTop="20dp"
+            android:layout_centerHorizontal="true"/>
+
+        <CheckBox
+            android:id="@+id/javaIntro"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/fundamentalsOfJava"
+            android:layout_marginLeft="20dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginEnd="15dp"
+            android:layout_marginRight="15dp"
+            android:text="@string/javaIntro" />
+
+        <CheckBox
+            android:id="@+id/features"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/fundamentalsOfJava"
+            android:layout_toEndOf="@id/javaIntro"
+            android:layout_toRightOf="@id/javaIntro"
+            android:text="@string/javaFeatures"/>
+
+        <CheckBox
+            android:id="@+id/differenceJavaC"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/javaIntro"
+            android:layout_alignLeft="@id/javaIntro"
+            android:layout_alignStart="@id/javaIntro"
+            android:text="@string/differenceJavaC"/>
+
+        <CheckBox
+            android:id="@+id/javaEnvironment"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/differenceJavaC"
+            android:layout_alignLeft="@id/javaIntro"
+            android:layout_alignStart="@id/javaIntro"
+            android:text="@string/javaEnvironment"/>
+
+        <TextView
+            android:id="@+id/javaBasics"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/javaEnvironment"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="5dp"
+            android:text="@string/javaBasics"/>
+
+        <CheckBox
+            android:id="@+id/namingConvention"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/javaBasics"
+            android:layout_alignLeft="@id/javaIntro"
+            android:layout_alignStart="@id/javaIntro"
+            android:text="@string/namingConvention"/>
+
+        <CheckBox
+            android:id="@+id/classesObjects"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/javaBasics"
+            android:layout_alignLeft="@id/features"
+            android:layout_alignStart="@id/features"
+            android:text="@string/classesObjects"/>
+
+        <CheckBox
+            android:id="@+id/operators"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/namingConvention"
+            android:layout_alignLeft="@id/javaIntro"
+            android:layout_alignStart="@id/javaIntro"
+            android:layout_marginRight="20dp"
+            android:layout_marginEnd="20dp"
+            android:text="@string/operstors"/>
+
+
+        <CheckBox
+            android:id="@+id/controlStatement"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/namingConvention"
+            android:layout_toRightOf="@id/operators"
+            android:layout_toEndOf="@id/operators"
+            android:layout_marginRight="20dp"
+            android:layout_marginEnd="20dp"
+            android:text="@string/controlStatement"/>
+
+        <CheckBox
+            android:id="@+id/loops"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/namingConvention"
+            android:layout_toRightOf="@id/controlStatement"
+            android:layout_toEndOf="@id/controlStatement"
+            android:text="@string/loops"/>
+
+        <CheckBox
+            android:id="@+id/stringBuffer"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/operators"
+            android:layout_alignLeft="@id/javaIntro"
+            android:layout_alignStart="@id/javaIntro"
+            android:text="@string/stringBuffer"/>
+
+        <CheckBox
+            android:id="@+id/stringBuilder"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/operators"
+            android:layout_alignLeft="@id/controlStatement"
+            android:layout_alignStart="@id/controlStatement"
+            android:text="@string/stringBuilder"/>
+
+        <CheckBox
+            android:id="@+id/string"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/operators"
+            android:layout_alignStart="@id/loops"
+            android:layout_alignLeft="@id/loops"
+            android:text="@string/string"/>
+
+        <CheckBox
+            android:id="@+id/keywords"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/stringBuffer"
+            android:layout_alignLeft="@id/javaIntro"
+            android:layout_alignStart="@id/javaIntro"
+            android:text="@string/keywords"/>
+
+        <CheckBox
+            android:id="@+id/packages"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/stringBuffer"
+            android:layout_alignLeft="@id/controlStatement"
+            android:layout_alignStart="@id/controlStatement"
+            android:text="@string/packages"/>
+
+        <CheckBox
+            android:id="@+id/array"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/stringBuffer"
+            android:layout_alignStart="@id/loops"
+            android:layout_alignLeft="@id/loops"
+            android:text="@string/array"/>
+
+        <TextView
+            android:id="@+id/javaOOPS"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/keywords"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="5dp"
+            android:text="@string/javaOOPS"/>
+
+        <CheckBox
+            android:id="@+id/inheritance"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/javaOOPS"
+            android:layout_alignLeft="@id/javaIntro"
+            android:layout_alignStart="@id/javaIntro"
+            android:text="@string/inheritance" />
+
+        <CheckBox
+            android:id="@+id/polymorphism"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/javaOOPS"
+            android:layout_alignLeft="@id/features"
+            android:layout_alignStart="@id/features"
+            android:text="@string/polymorphism"/>
+
+        <CheckBox
+            android:id="@+id/abstraction"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/inheritance"
+            android:layout_alignLeft="@id/javaIntro"
+            android:layout_alignStart="@id/javaIntro"
+            android:text="@string/abstraction" />
+
+        <CheckBox
+            android:id="@+id/encapsulation"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/inheritance"
+            android:layout_alignLeft="@id/features"
+            android:layout_alignStart="@id/features"
+            android:text="@string/encapsulation"/>
+
+        <TextView
+            android:id="@+id/jFeatures"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/abstraction"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="5dp"
+            android:text="@string/jFeatures"/>
+
+
+        <CheckBox
+            android:id="@+id/threads"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/jFeatures"
+            android:layout_alignLeft="@id/javaIntro"
+            android:layout_alignStart="@id/javaIntro"
+            android:text="@string/threads" />
+
+        <CheckBox
+            android:id="@+id/multiThreads"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/jFeatures"
+            android:layout_alignLeft="@id/features"
+            android:layout_alignStart="@id/features"
+            android:text="@string/multiThread"/>
+
+        <CheckBox
+            android:id="@+id/deadLock"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/threads"
+            android:layout_alignLeft="@id/javaIntro"
+            android:layout_alignStart="@id/javaIntro"
+            android:text="@string/deadLock" />
+
+        <CheckBox
+            android:id="@+id/synchronization"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/threads"
+            android:layout_alignLeft="@id/features"
+            android:layout_alignStart="@id/features"
+            android:text="@string/synchronization"/>
+
+        <CheckBox
+            android:id="@+id/exceptionHandling"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/deadLock"
+            android:layout_alignLeft="@id/javaIntro"
+            android:layout_alignStart="@id/javaIntro"
+            android:text="@string/exceptionHandling" />
+
+        <CheckBox
+            android:id="@+id/fileHandling"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/deadLock"
+            android:layout_alignLeft="@id/features"
+            android:layout_alignStart="@id/features"
+            android:text="@string/fileHandling"/>
+
+        <CheckBox
+            android:id="@+id/checkedException"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/exceptionHandling"
+            android:layout_alignLeft="@id/javaIntro"
+            android:layout_alignStart="@id/javaIntro"
+            android:text="@string/checked" />
+
+        <CheckBox
+            android:id="@+id/uncheckedException"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/exceptionHandling"
+            android:layout_alignLeft="@id/features"
+            android:layout_alignStart="@id/features"
+            android:text="@string/unchecked"/>
+
+        <CheckBox
+            android:id="@+id/ioOperation"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/checkedException"
+            android:layout_alignLeft="@id/javaIntro"
+            android:layout_alignStart="@id/javaIntro"
+            android:text="@string/ioOperations" />
+
+        <TextView
+            android:id="@+id/advanceJava"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/ioOperation"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="5dp"
+            android:text="@string/advanceJava"/>
+
+        <CheckBox
+            android:id="@+id/collection"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/advanceJava"
+            android:layout_alignLeft="@id/javaIntro"
+            android:layout_alignStart="@id/javaIntro"
+            android:text="@string/collection" />
+
+        <CheckBox
+            android:id="@+id/wrapperClasses"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/advanceJava"
+            android:layout_alignLeft="@id/features"
+            android:layout_alignStart="@id/features"
+            android:text="@string/wrapperClasses"/>
+
+        <CheckBox
+            android:id="@+id/database"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/collection"
+            android:layout_alignLeft="@id/javaIntro"
+            android:layout_alignStart="@id/javaIntro"
+            android:text="@string/database" />
+
+        <CheckBox
+            android:id="@+id/awtSwing"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/collection"
+            android:layout_alignLeft="@id/features"
+            android:layout_alignStart="@id/features"
+            android:text="@string/awtSwing"/>
+
+        <CheckBox
+            android:id="@+id/servlet"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/database"
+            android:layout_alignLeft="@id/javaIntro"
+            android:layout_alignStart="@id/javaIntro"
+            android:text="@string/servlet" />
+
+        <CheckBox
+            android:id="@+id/jsp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/database"
+            android:layout_alignLeft="@id/features"
+            android:layout_alignStart="@id/features"
+            android:text="@string/jsp"/>
+
+    </RelativeLayout>
+
+
+
+</ScrollView>

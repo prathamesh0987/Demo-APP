@@ -1,0 +1,266 @@
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/android_background"
+    tools:context="com.svrinfotech.AndroidSyllabus">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+        
+        <TextView
+            android:id="@+id/androidIntro"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="5dp"
+            android:layout_marginTop="20dp"
+            android:text="@string/androidIntro"/>
+
+        <CheckBox
+            android:id="@+id/androidHistory"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/androidIntro"
+            android:layout_marginLeft="20dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginEnd="50dp"
+            android:layout_marginRight="50dp"
+            android:text="@string/androidHistory" />
+
+        <CheckBox
+            android:id="@+id/androidVersions"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/androidIntro"
+            android:layout_toEndOf="@id/androidHistory"
+            android:layout_toRightOf="@id/androidHistory"
+            android:text="@string/androidVersions"/>
+
+        <CheckBox
+            android:id="@+id/androidArchitecture"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/androidHistory"
+            android:layout_alignLeft="@id/androidHistory"
+            android:layout_alignStart="@id/androidHistory"
+            android:text="@string/androidArch" />
+
+        <CheckBox
+            android:id="@+id/manifestFile"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/androidHistory"
+            android:layout_alignLeft="@id/androidVersions"
+            android:layout_alignStart="@id/androidVersions"
+            android:text="@string/manifestFile"/>
+
+        <CheckBox
+            android:id="@+id/rJava"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/androidArchitecture"
+            android:layout_alignLeft="@id/androidHistory"
+            android:layout_alignStart="@id/androidHistory"
+            android:text="@string/rJava" />
+
+        <CheckBox
+            android:id="@+id/androidStudio"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/androidArchitecture"
+            android:layout_alignLeft="@id/androidVersions"
+            android:layout_alignStart="@id/androidVersions"
+            android:text="@string/androidStudio"/>
+
+        <TextView
+            android:id="@+id/androidBasics"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/rJava"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="5dp"
+            android:text="@string/androidBasics"/>
+
+        <CheckBox
+            android:id="@+id/lifeCycle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/androidBasics"
+            android:layout_alignLeft="@id/androidHistory"
+            android:layout_alignStart="@id/androidHistory"
+            android:text="@string/lifeCycle" />
+
+        <CheckBox
+            android:id="@+id/uiWidgets"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/androidBasics"
+            android:layout_alignLeft="@id/androidVersions"
+            android:layout_alignStart="@id/androidVersions"
+            android:text="@string/uiWidgets"/>
+
+        <CheckBox
+            android:id="@+id/implicitIntent"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/lifeCycle"
+            android:layout_alignLeft="@id/androidHistory"
+            android:layout_alignStart="@id/androidHistory"
+            android:text="@string/implicitIntent" />
+
+        <CheckBox
+            android:id="@+id/explicitIntent"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/lifeCycle"
+            android:layout_alignLeft="@id/androidVersions"
+            android:layout_alignStart="@id/androidVersions"
+            android:text="@string/explicitIntent"/>
+
+        <CheckBox
+            android:id="@+id/coreBlocks"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/implicitIntent"
+            android:layout_alignLeft="@id/androidHistory"
+            android:layout_alignStart="@id/androidHistory"
+            android:text="@string/coreBlocks" />
+
+        <TextView
+            android:id="@+id/advanceAndroid"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/coreBlocks"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="5dp"
+            android:text="@string/advanceAndroid"/>
+
+        <CheckBox
+            android:id="@+id/jsonParsing"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/advanceAndroid"
+            android:layout_alignLeft="@id/androidHistory"
+            android:layout_alignStart="@id/androidHistory"
+            android:text="@string/jsonParsing" />
+
+        <CheckBox
+            android:id="@+id/recyclerView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/advanceAndroid"
+            android:layout_alignLeft="@id/androidVersions"
+            android:layout_alignStart="@id/androidVersions"
+            android:text="@string/recyclerView"/>
+
+        <CheckBox
+            android:id="@+id/sqLite"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/jsonParsing"
+            android:layout_alignLeft="@id/androidHistory"
+            android:layout_alignStart="@id/androidHistory"
+            android:text="@string/sqLite" />
+
+        <CheckBox
+            android:id="@+id/handler"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/jsonParsing"
+            android:layout_alignLeft="@id/androidVersions"
+            android:layout_alignStart="@id/androidVersions"
+            android:text="@string/handler"/>
+
+        <CheckBox
+            android:id="@+id/asyncTask"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/sqLite"
+            android:layout_alignLeft="@id/androidHistory"
+            android:layout_alignStart="@id/androidHistory"
+            android:text="@string/asyncTask" />
+
+
+        <CheckBox
+            android:id="@+id/animation"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/sqLite"
+            android:layout_alignLeft="@id/androidVersions"
+            android:layout_alignStart="@id/androidVersions"
+            android:text="@string/animation" />
+
+        <CheckBox
+            android:id="@+id/fragments"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/asyncTask"
+            android:layout_alignLeft="@id/androidHistory"
+            android:layout_alignStart="@id/androidHistory"
+            android:text="@string/fragments"/>
+
+        <TextView
+            android:id="@+id/androidCoreBlocks"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/fragments"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="5dp"
+            android:text="@string/advanceAndroid"/>
+
+        <CheckBox
+            android:id="@+id/activity"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/androidCoreBlocks"
+            android:layout_alignLeft="@id/androidHistory"
+            android:layout_alignStart="@id/androidHistory"
+            android:layout_marginRight="50dp"
+            android:layout_marginEnd="50dp"
+            android:text="@string/activity" />
+
+        <CheckBox
+            android:id="@+id/intent"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/androidCoreBlocks"
+            android:layout_toRightOf="@id/activity"
+            android:layout_toEndOf="@id/activity"
+            android:layout_marginRight="50dp"
+            android:layout_marginEnd="50dp"
+            android:text="@string/intent"/>
+
+        <CheckBox
+            android:id="@+id/services"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/androidCoreBlocks"
+            android:layout_toRightOf="@id/intent"
+            android:layout_toEndOf="@id/intent"
+            android:text="@string/services"/>
+
+        <CheckBox
+            android:id="@+id/broadcastReceiver"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/activity"
+            android:layout_alignLeft="@id/androidHistory"
+            android:layout_alignStart="@id/androidHistory"
+            android:text="@string/broadcastReceiver" />
+
+        <CheckBox
+            android:id="@+id/contentProvider"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/activity"
+            android:layout_alignLeft="@id/androidVersions"
+            android:layout_alignStart="@id/androidVersions"
+            android:text="@string/contentProvider" />
+
+        </RelativeLayout>
+</ScrollView>

@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group
+        android:id="@+id/main_menu"
+        android:checkableBehavior="single">
+        <item
+            android:id="@+id/home"
+            android:icon="@mipmap/ic_home_black_24dp"
+            android:title="@string/home" />
+
+        <item
+            android:id="@+id/newAdmission"
+            android:icon="@mipmap/ic_person_add_black_24dp"
+            android:title="@string/newAdmission" />
+
+        <item
+            android:id="@+id/totalAdmission"
+            android:icon="@mipmap/ic_add_black_24dp"
+            android:title="@string/totalAdmission" />
+
+        <item
+            android:id="@+id/totalCollection"
+            android:icon="@mipmap/ic_attach_money_black_24dp"
+            android:title="@string/collection" />
+
+        <item
+            android:id="@+id/syllabus"
+            android:icon="@drawable/syllabus"
+            android:title="@string/syllabus" />
+
+        <item
+            android:id="@+id/event"
+            android:icon="@mipmap/ic_event_black_24dp"
+            android:title="@string/event" />
+
+        <item
+            android:id="@+id/groupChat"
+            android:icon="@mipmap/ic_people_black_36dp"
+            android:title="@string/groupChat" />
+
+        <item
+            android:id="@+id/formula"
+            android:icon="@drawable/formula"
+            android:title="@string/formula"/>
+
+        <item
+            android:id="@+id/logout"
+            android:icon="@mipmap/ic_exit_to_app_black_24dp"
+            android:title="@string/logout" />
+
+    </group>
+
+    <!--<group
+        android:id="@+id/sub_menu"
+        android:checkableBehavior="single">
+        <item
+            android:id="@+id/delete"
+            android:icon="@mipmap/ic_delete_black_24dp"
+            android:title="Delete Account" />
+    </group>-->
+
+</menu>
